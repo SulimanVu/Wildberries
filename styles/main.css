@@ -14,24 +14,84 @@ main {
     background-color: #fff;
 }
 
-
-.products{
+.products {
     width: 65%;
 }
-.card__price{
+
+.card__price {
     width: 28%;
 }
-.see__all{
+
+/* see-all */
+.see__all {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border-bottom: rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+
 }
-.see__all>img{
+
+.see__all>img {
     width: 16px;
     height: 10px;
 }
-.see__all>div{
+
+.see__all>div {
     display: flex;
     justify-content: space-between;
+}
+
+/* prod-cards */
+.prod__cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prod__info {
+    display: flex;
+    align-items: center;
+}
+
+.prod_img {
+    width: 72px;
+    height: 96px;
+    object-fit: cover;
+}
+
+/* amount */
+.prod__amount{
+    display: flex;
+}
+.amount{
+    width: 100px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: gray;
+}
+.amount div{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+.prod__all__info {
+    margin-left: 30px;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+.prod__all__info p {
+    font-size: 16px;
+}
+
+.prod__color {
+    margin-right: 16px;
+}
+
+.producer {
+    color: #8A898E;
 }
