@@ -1,0 +1,88 @@
+header {
+    width: 95%;
+    margin: 16px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 190px;
+}
+
+.menu>div {
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 8px;
+    padding: 12px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.menu h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 24px;
+    margin-left: 16px;
+}
+
+.input__block {
+    width: 70%;
+    align-self: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.input__block input {
+    width: 100%;
+    color: #fff;
+    border-radius: 20px;
+    padding: 12px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+}
+
+.input__block input::placeholder {
+    color: #fff;
+    opacity: 0.5;
+}
+
+.input__block img {
+    position: absolute;
+    top: 8px;
+    right: -25px;
+}
+
+.icons {
+    width: 170px;
+    height: 56px;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons>div {
+    height: 60px;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center
+}
+
+.icons>div:nth-child(1)>img {
+    height: 30px;
+}
+
+.icons>div:nth-child(2)>img {
+    height: 30px;
+}
