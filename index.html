@@ -35,6 +35,7 @@
     <main>
       <section class="products">
         <!-- FILTER-PRODUCTS -->
+        <!-- PRODUCT-IN-BASKET -->
         <h2>Корзина</h2>
         <div class="see__all">
           <div>
@@ -46,131 +47,208 @@
           </div>
           <img src="./images/arrow.png" alt="#" />
         </div>
-
-        <!-- PRODUCT-CARDS -->
-        <div class="prod__cards">
-          <div class="prod__info">
-            <label class="checkbox_container">
-              <input type="checkbox" />
-              <span class="checkbox_checkmark"></span>
-            </label>
-            <div class="prod__img">
-              <img src="./images/product_img1.png" alt="" />
+        <!-- PRODUCTS-BASCET-CARDS -->
+        <section class="products__in__bascet">
+          <div class="prod__cards">
+            <div class="prod__info">
+              <label class="checkbox_container">
+                <input type="checkbox" />
+                <span class="checkbox_checkmark"></span>
+              </label>
+              <div class="prod__img">
+                <img src="./images/product_img1.png" alt="" />
+              </div>
+              <div class="prod__all__info">
+                <span class="prod__header">Футболка UZcotton мужская</span>
+                <br />
+                <span class="prod__color">Цвет: белый</span>
+                <span class="prod__size">Размер: 56</span> <br />
+                <div class="producer_block">
+                  <span class="producer">Коледино WB</span>
+                  <span class="producer">OOO Вайлдберриз</span>
+                </div>
+              </div>
             </div>
-            <div class="prod__all__info">
-              <span class="prod__header">Футболка UZcotton мужская</span> <br />
-              <span class="prod__color">Цвет: белый</span>
-              <span class="prod__size">Размер: 56</span> <br />
-              <div class="producer_block">
-                <span class="producer">Коледино WB</span>
-                <span class="producer">OOO Вайлдберриз</span>
+            <div class="prod__amount">
+              <div class="prod__change__amount">
+                <div class="amount">
+                  <div class="increment">-</div>
+                  <div class="in__stock">1</div>
+                  <div class="decrement">+</div>
+                </div>
+                <span class="balance">Осталось 2 шт.</span>
+                <div class="prod__like__delete">
+                  <img src="./images/like.png" alt="like" />
+                  <img src="./images/basket_in_card.png" alt="delete" />
+                </div>
+              </div>
+              <div class="prod__price">
+                <h3>522 <span>сом</span></h3>
+                <div class="old__price">1051 сом</div>
               </div>
             </div>
           </div>
-          <div class="prod__amount">
-            <div class="prod__change__amount">
-              <div class="amount">
-                <div class="increment">-</div>
-                <div class="in__stock">1</div>
-                <div class="decrement">+</div>
+          <!-- 2 -->
+          <div class="prod__cards">
+            <div class="prod__info">
+              <label class="checkbox_container">
+                <input type="checkbox" />
+                <span class="checkbox_checkmark"></span>
+              </label>
+              <div class="prod__img">
+                <img src="./images/product_img2.png" alt="" />
               </div>
-              <span class="balance">Осталось 2 шт.</span>
-              <div class="prod__like__delete">
-                <img src="./images/like.png" alt="like" />
-                <img src="./images/basket_in_card.png" alt="delete" />
-              </div>
-            </div>
-            <div class="prod__price">
-              <h3>522 <span>сом</span></h3>
-              <div class="old__price">1051 сом</div>
-            </div>
-          </div>
-        </div>
-        <!-- 2 -->
-        <div class="prod__cards">
-          <div class="prod__info">
-            <label class="checkbox_container">
-              <input type="checkbox" />
-              <span class="checkbox_checkmark"></span>
-            </label>
-            <div class="prod__img">
-              <img src="./images/product_img2.png" alt="" />
-            </div>
-            <div class="prod__all__info">
-              <span class="prod__header">
-                Силиконовый чехол картхолдер (отверстия) для карт, прозрачный
-                кейс бампер на Apple iPhone XR, MobiSafe
-              </span>
-              <br />
-              <span class="prod__color">Цвет: прозрачный</span><br />
-              <!-- <span class="prod__size"></span> -->
-              <div class="producer_block">
-                <span class="producer">Коледино WB</span>
-                <span class="producer">OOO Мегапрофстиль</span>
+              <div class="prod__all__info">
+                <span class="prod__header">
+                  Силиконовый чехол картхолдер (отверстия) для карт, прозрачный
+                  кейс бампер на Apple iPhone XR, MobiSafe
+                </span>
+                <br />
+                <span class="prod__color">Цвет: прозрачный</span><br />
+                <!-- <span class="prod__size"></span> -->
+                <div class="producer_block">
+                  <span class="producer">Коледино WB</span>
+                  <span class="producer">OOO Мегапрофстиль</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="prod__amount">
-            <div class="prod__change__amount">
-              <div class="amount">
-                <div class="increment">-</div>
-                <div class="in__stock">200</div>
-                <div class="decrement">+</div>
+            <div class="prod__amount">
+              <div class="prod__change__amount">
+                <div class="amount">
+                  <div class="increment">-</div>
+                  <div class="in__stock">200</div>
+                  <div class="decrement">+</div>
+                </div>
+                <div class="prod__like__delete">
+                  <img src="./images/like.png" alt="like" />
+                  <img src="./images/basket_in_card.png" alt="delete" />
+                </div>
               </div>
-              <div class="prod__like__delete">
-                <img src="./images/like.png" alt="like" />
-                <img src="./images/basket_in_card.png" alt="delete" />
-              </div>
-            </div>
-            <div class="prod__price">
-              <h3>2 100 047 <span>сом</span></h3>
-              <div class="old__price">2 300 047 сом</div>
-            </div>
-          </div>
-        </div>
-        <!-- 3 -->
-        <div class="prod__cards">
-          <div class="prod__info">
-            <label class="checkbox_container">
-              <input type="checkbox" />
-              <span class="checkbox_checkmark"></span>
-            </label>
-            <div class="prod__img">
-              <img src="./images/product_img3.png" alt="" />
-            </div>
-            <div class="prod__all__info">
-              <span class="prod__header">
-                Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
-                заточенные, шестигранные, Faber-Castell
-              </span>
-              <br />
-              <!-- <span class="prod__color">Цвет: белый</span>
-              <span class="prod__size">Размер: 56</span> <br /> -->
-              <div class="producer_block">
-                <span class="producer">Коледино WB</span>
-                <span class="producer">OOO Вайлдберриз</span>
+              <div class="prod__price">
+                <h3>2 100 047 <span>сом</span></h3>
+                <div class="old__price">2 300 047 сом</div>
               </div>
             </div>
           </div>
-          <div class="prod__amount">
-            <div class="prod__change__amount">
-              <div class="amount">
-                <div class="increment">-</div>
-                <div class="in__stock">2</div>
-                <div class="decrement">+</div>
+          <!-- 3 -->
+          <div class="prod__cards">
+            <div class="prod__info">
+              <label class="checkbox_container">
+                <input type="checkbox" />
+                <span class="checkbox_checkmark"></span>
+              </label>
+              <div class="prod__img">
+                <img src="./images/product_img3.png" alt="" />
               </div>
-              <span class="balance">Осталось 2 шт.</span>
-              <div class="prod__like__delete">
-                <img src="./images/like.png" alt="like" />
-                <img src="./images/basket_in_card.png" alt="delete" />
+              <div class="prod__all__info">
+                <span class="prod__header">
+                  Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
+                  заточенные, шестигранные, Faber-Castell
+                </span>
+                <br />
+                <!-- <span class="prod__color">Цвет: белый</span>
+                    <span class="prod__size">Размер: 56</span> <br /> -->
+                <div class="producer_block">
+                  <span class="producer">Коледино WB</span>
+                  <span class="producer">OOO Вайлдберриз</span>
+                </div>
               </div>
             </div>
-            <div class="prod__price">
-              <h3>497 <span>сом</span></h3>
-              <div class="old__price">950 сом</div>
+            <div class="prod__amount">
+              <div class="prod__change__amount">
+                <div class="amount">
+                  <div class="increment">-</div>
+                  <div class="in__stock">2</div>
+                  <div class="decrement">+</div>
+                </div>
+                <span class="balance">Осталось 2 шт.</span>
+                <div class="prod__like__delete">
+                  <img src="./images/like.png" alt="like" />
+                  <img src="./images/basket_in_card.png" alt="delete" />
+                </div>
+              </div>
+              <div class="prod__price">
+                <h3>497 <span>сом</span></h3>
+                <div class="old__price">950 сом</div>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+        <!-- PRODUCTS-ABSENT -->
+        <h4 class="absent__header">Отсутствуют 3 товара</h4>
+        <section class="products__in__bascet">
+          <div class="prod__cards">
+            <div class="prod__info">
+              <div class="prod__img img_sold">
+                <img src="./images/product_img1.png" alt="" />
+              </div>
+              <div class="prod__all__info">
+                <span class="prod__header">Футболка UZcotton мужская</span>
+                <br />
+                <span class="prod__color">Цвет: белый</span>
+                <span class="prod__size">Размер: 56</span> <br />
+              </div>
+            </div>
+            <div class="prod__amount">
+              <div class="prod__change__amount">
+                <div class="prod__like__delete">
+                  <img src="./images/like.png" alt="like" />
+                  <img src="./images/basket_in_card.png" alt="delete" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="prod__cards">
+            <div class="prod__info">
+              <div class="prod__img img_sold">
+                <img src="./images/product_img2.png" alt="" />
+              </div>
+              <div class="prod__all__info">
+                <span class="prod__header">
+                  Силиконовый чехол картхолдер (отверстия) для карт, прозрачный
+                  кейс бампер на Apple iPhone XR, MobiSafe
+                </span>
+                <br />
+                <span class="prod__color">Цвет: прозрачный</span><br />
+                <!-- <span class="prod__size"></span> -->
+              </div>
+            </div>
+            <div class="prod__amount">
+              <div class="prod__change__amount">
+                <div class="prod__like__delete">
+                  <img src="./images/like.png" alt="like" />
+                  <img src="./images/basket_in_card.png" alt="delete" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="prod__cards">
+            <div class="prod__info">
+              <div class="prod__img img_sold">
+                <img src="./images/product_img3.png" alt="" />
+              </div>
+              <div class="prod__all__info">
+                <span class="prod__header">
+                  Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
+                  заточенные, шестигранные, Faber-Castell
+                </span>
+                <br />
+                <!-- <span class="prod__color">Цвет: белый</span>
+                      <span class="prod__size">Размер: 56</span> <br /> -->
+              </div>
+            </div>
+            <div class="prod__amount">
+              <div class="prod__change__amount">
+                <div class="prod__like__delete">
+                  <img src="./images/like.png" alt="like" />
+                  <img src="./images/basket_in_card.png" alt="delete" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
       <aside class="card__price"></aside>
     </main>

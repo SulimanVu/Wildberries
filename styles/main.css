@@ -67,6 +67,9 @@ main {
   height: 96px;
   object-fit: cover;
 }
+.img_sold {
+  filter: grayscale(100%);
+}
 
 /* amount */
 .prod__amount {
@@ -148,4 +151,10 @@ main {
   text-decoration: line-through;
   border-bottom: 1px #8a898e;
   border-bottom-style: dashed;
+}
+
+/* absent */
+.absent__header {
+  margin-top: 37.5px;
+  font-size: 16px;
 }
