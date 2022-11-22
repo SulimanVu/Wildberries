@@ -1,11 +1,13 @@
 /* label контейнер */
 .checkbox_container {
+    height: 96px;
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
+    margin-top: 38px;
+    align-self: flex-start;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -66,4 +68,8 @@
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+.all{
+    height: auto;
+    margin-top: 0;
 }
