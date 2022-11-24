@@ -1,0 +1,118 @@
+h4 {
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-bottom: 4px;
+}
+.card__price__block {
+  background-color: #fff;
+  border-radius: 10px;
+}
+.current__price div {
+  display: flex;
+  justify-content: space-between;
+}
+.card__price__block {
+  padding: 16px 24px;
+  box-sizing: border-box;
+}
+.current__price h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 8px;
+  height: min-content;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.transport, .card__payment{
+  margin-top: 24px;
+}
+.transport span,
+.card__payment span {
+  font-weight: 400;
+  font-size: 13px;
+}
+.transport h4 span {
+  font-size: 16px;
+  font-weight: 700;
+}
+.transport div {
+  display: flex;
+  flex-direction: column;
+}
+.transport div span:nth-child(2) {
+  border-bottom: 1px dashed #cb11ab;
+}
+.return__shipp {
+  margin-top: 12px;
+  padding: 8px 8px 12px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  background-color: #f6f6fa;
+  border-radius: 8px;
+}
+.return__shipp img {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+.card__payment__img {
+  display: flex;
+  align-items: center;
+}
+.card__payment__img img {
+  margin-right: 8px;
+}
+
+/* checkbox__payment */
+.check__block {
+  margin-top: 12px;
+  padding: 8px 8px 12px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #f6f6fa;
+}
+.check__payment {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  margin-top: 12px;
+}
+.check__payment label {
+  height: fit-content;
+  margin-top: 0;
+}
+
+.card__price__block button {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #fff;
+  background-color: #cb11ab;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.agreement img {
+  width: 13px;
+  height: 24px;
+  align-self: flex-start;
+  padding-top: 4px;
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+.agreement {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+} 

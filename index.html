@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./styles/checkbox.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/card_price.css" />
+    <link rel="stylesheet" href="./styles/application.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
     <title>Wildberries</title>
   </head>
 
@@ -37,7 +40,7 @@
         <!-- FILTER-PRODUCTS -->
         <!-- PRODUCT-IN-BASKET -->
         <h2>Корзина</h2>
-        <div class="see__all">
+        <section class="see__all">
           <div>
             <label class="checkbox_container all">
               <input type="checkbox" />
@@ -46,7 +49,7 @@
             <span>Выбрать все</span>
           </div>
           <img src="./images/arrow.png" alt="#" />
-        </div>
+        </section>
         <!-- PRODUCTS-BASCET-CARDS -->
         <section class="products__in__bascet">
           <div class="prod__cards">
@@ -175,10 +178,11 @@
           </div>
         </section>
         <!-- PRODUCTS-ABSENT -->
-        <div class="absent__header see__all">
+        <section class="absent__header see__all">
           <span>Отсутствуют 3 товара</span>
           <img src="./images/arrow.png" alt="#" />
-        </div>
+        </section>
+        <!-- products__in__bascet -->
         <section class="products__in__bascet">
           <div class="prod__cards">
             <div class="prod__info">
@@ -252,11 +256,145 @@
             </div>
           </div>
         </section>
+        <!-- APPLICATION-PROCESSING -->
+        <section class="application__process">
+          <div class="delivery">
+            <div class="del__header">
+              <h3>Способ доставки</h3>
+              <span class="purple">Изменить</span>
+            </div>
+            <div class="extradition">
+              <h4>Пункт выдачи</h4>
+              <div class="point">
+                <span>Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
+                <div>
+                  <img src="./images/rating.png" alt="star" />
+                  <span>4.99</span>
+                  <span>Ежедневно с 10 до 21</span>
+                </div>
+              </div>
+            </div>
+            <div class="extradition">
+              <h4>Стоимость доставки</h4>
+              <span>Бесплатно</span>
+            </div>
+            <div class="extradition">
+              <h4>5--6 февраля</h4>
+              <div class="images__block">
+                <img src="./images/product_img1.png" alt="#" />
+                <img src="./images/product_img2.png" alt="#" />
+                <img src="./images/product_img3.png" alt="#" />
+              </div>
+            </div>
+            <div class="extradition">
+              <h4>7--8 февраля</h4>
+              <div class="images__block">
+                <img src="./images/product_img2.png" alt="#" />
+              </div>
+            </div>
+            <div class="return__del">
+              <img src="./images/price shipping.png" alt="#" />
+              <span>Обратная доставка товаров на склад при отказе — </span>
+              <span class="green">&nbsp;бесплатно</span>
+            </div>
+          </div>
+          <div class="payment__method">
+            <div class="del__header">
+              <h3>Способ оплаты</h3>
+              <span class="purple">Изменить</span>
+            </div>
+            <div class="card__info">
+              <img src="./images/payment_sistem.png" alt="" />
+              <span>1234 56•• •••• 1234</span>
+              <span>01/30</span>
+            </div>
+            <span>Спишем оплату с карты при получении</span>
+          </div>
+          <form>
+            <h4>Получатель</h4>
+            <div class="inputs__block">
+              <input type="text" placeholder="Имя" />
+              <input type="text" placeholder="Фамилия" />
+            </div>
+            <div class="inputs__block">
+              <input type="email" placeholder="Почта" />
+              <input
+                id="tel"
+                type="tel"
+                placeholder="Телефон"
+                data-mask="phone"
+              />
+              <input
+                id="inn"
+                type="text"
+                placeholder="ИНН"
+                data-mask="number"
+              />
+            </div>
+          </form>
+        </section>
       </section>
-      <aside class="card__price"></aside>
+      <aside class="card__price">
+        <div class="card__price__block">
+          <div class="current__price">
+            <h3>
+              <span>Итого</span>
+              <span>2 101 063</span>
+            </h3>
+            <div><span>4 товара</span><span>2 302 048 сом</span></div>
+            <div><span>Скидка</span><span>−200 985 сом</span></div>
+            <div><span>Доставка</span><span>Бесплатно</span></div>
+          </div>
+          <div class="transport">
+            <h4>
+              <span>Доставка в пункт выдачи</span>
+              <img src="./images/pencil.png" alt="" />
+            </h4>
+            <div>
+              <span>Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
+              <span class="purple">5-8 фев</span>
+            </div>
+          </div>
+          <div class="return__shipp">
+            <img src="./images/price shipping.png" alt="#" />
+            <div>
+              <span>Обратная доставка товаров на склад при отказе — </span>
+              <span class="green">бесплатно</span>
+            </div>
+          </div>
+          <div class="card__payment">
+            <h4>Оплата картой</h4>
+            <div class="card__payment__img">
+              <img src="./images/payment_sistem.png" alt="" />
+              <span>1234 12•• •••• 1234</span>
+            </div>
+            <div class="check__block">
+              <div class="check__payment">
+                <label class="checkbox_container">
+                  <input type="checkbox" />
+                  <span class="checkbox_checkmark"></span>
+                </label>
+                <span>Списать оплату сразу</span>
+              </div>
+              <span>Спишем оплату с карты при получении</span>
+            </div>
+          </div>
+          <button>Заказать</button>
+          <div class="agreement">
+            <img src="./images/check_mark.png" alt="#" />
+            <span
+              >Соглашаюсь с правилами пользования торговой площадкой
+              и возврата</span
+            >
+          </div>
+        </div>
+      </aside>
     </main>
-    <footer></footer>
+    <footer>
+      <h5>© 2022  ООО «Товары и точка»</h5>
+    </footer>
 
+    <script src="https://unpkg.com/imask"></script>
     <script src="./index.js"></script>
   </body>
 </html>

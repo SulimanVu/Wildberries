@@ -13,7 +13,13 @@ main {
   border-radius: 20px;
   background-color: rgb(246, 246, 250);
 }
-
+.green {
+  color: #0cb477;
+}
+.purple {
+  width: fit-content;
+  color: #cb11ab;
+}
 .products {
   width: 65%;
 }
@@ -53,7 +59,6 @@ main {
   width: 400px;
   word-wrap: break-word;
   display: flex;
-  align-items: center;
 }
 .prod__header {
   width: 275px;
@@ -105,9 +110,10 @@ main {
   margin-left: 16px;
 }
 .prod__all__info {
-  align-content: flex-start;
+  padding-top: 12px;
   line-height: 28px;
   font-size: 13px;
+  box-sizing: border-box;
 }
 
 .prod__size {
@@ -163,4 +169,23 @@ main {
 .absent__header {
   width: 100%;
   margin-top: 40px;
+}
+
+/* footer */
+
+footer{
+  font-family: "Segoe UI";
+  text-align: center;
+  padding: 24px 0;
+  box-sizing: border-box;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .input__block{
+    width: 48%;
+  }
 }

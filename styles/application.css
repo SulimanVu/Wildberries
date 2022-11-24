@@ -1,0 +1,57 @@
+.application__process > div, form {
+  padding: 16px 24px 24px;
+}
+.delivery, .payment__method, form {
+  margin-top: 16px;
+  border-radius: 16px;
+  background-color: #fff;
+}
+.delivery{
+    margin-top: 40px;
+}
+.del__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.extradition {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 16px;
+}
+.extradition h4 {
+  width: 170px;
+  align-self: flex-start;
+  margin-right: 32px;
+}
+.point {
+  display: flex;
+  flex-direction: column;
+}
+.point > span {
+  margin-bottom: 4px;
+}
+.point div span:nth-child(3) {
+  margin-left: 8px;
+}
+.images__block img:not(:last-child) {
+  margin-right: 8px;
+}
+.return__del {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+.return__del img {
+  margin-right: 8px;
+}
+
+/* payment__method */
+.card__info{
+    display: flex;
+}
+.card__info span:nth-child(2){
+    margin-right: 12px;
+    margin-left: 8px;
+}
