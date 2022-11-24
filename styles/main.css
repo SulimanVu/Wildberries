@@ -20,6 +20,10 @@ main {
   width: fit-content;
   color: #cb11ab;
 }
+.gray {
+  font-size: 13px;
+  color: #9797af;
+}
 .products {
   width: 65%;
 }
@@ -173,7 +177,7 @@ main {
 
 /* footer */
 
-footer{
+footer {
   font-family: "Segoe UI";
   text-align: center;
   padding: 24px 0;
@@ -185,7 +189,34 @@ footer{
 }
 
 @media screen and (min-width: 1024px) {
-  .input__block{
+  .input__block {
     width: 48%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .menu div:nth-child(1) {
+    border: none;
+    width: fit-content;
+  }
+  .input__block,
+  .icons {
+    display: none;
+  }
+  main {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card__info {
+    height: 24px;
+  }
+  .prod__price {
+    display: none;
+  }
+  .prod__cards {
+    flex-direction: column;
+  }
+  .prod__change__amount {
+    display: flex;
   }
 }

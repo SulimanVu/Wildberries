@@ -26,7 +26,21 @@ form > h4 {
 }
 
 @media screen and (max-width: 1024px) {
-    .inputs__block{
-        width: 100%;
-    }
+  .inputs__block {
+    width: 100%;
   }
+}
+
+@media screen and (max-width: 530px) {
+  .inputs__block {
+    flex-direction: column;
+    width: 100%;
+  }
+  .inputs__block input {
+    height: 56px;
+    width: 100%;
+  }
+  form div:nth-child(2) {
+    margin-bottom: 0px;
+  }
+}

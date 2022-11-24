@@ -116,3 +116,13 @@ h4 {
   font-size: 13px;
   font-weight: 400;
 } 
+
+@media screen and (max-width: 530px) {
+  .card__price{
+    margin-top: 32px  ;
+    width: 100%;
+  }
+  .transport h4 img{
+    height: fit-content;
+  }
+}
