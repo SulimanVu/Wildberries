@@ -188,6 +188,7 @@ footer {
   color: #fff;
 }
 
+/* Mobile */
 @media screen and (max-width: 530px) {
   .menu div:nth-child(1) {
     border: none;
@@ -199,13 +200,12 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
-
   .products > h2,
   .see__all,
-  .products__in__bascet{
+  .products__in__bascet {
     padding: 0 16px;
   }
-  .products__in__bascet{
+  .products__in__bascet {
     width: 100%;
   }
   .see__all {
@@ -218,7 +218,7 @@ footer {
   .prod__all__info {
     width: 100%;
   }
-  .prod__info{
+  .prod__info {
     width: 95%;
   }
   .card__info {
@@ -240,10 +240,7 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-  .prod__amount{
+  .prod__amount {
     width: 90%;
-  }
-  .prod__price{
-    width: fit-content;
   }
 }

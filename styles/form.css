@@ -25,12 +25,14 @@ form > h4 {
   margin-bottom: 16px;
 }
 
+/* laptop */
 @media screen and (max-width: 1024px) {
   .inputs__block {
     width: 100%;
   }
 }
 
+/* Mobile */
 @media screen and (max-width: 530px) {
   .inputs__block {
     flex-direction: column;

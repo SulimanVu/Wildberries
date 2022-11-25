@@ -1,86 +1,87 @@
 /* label контейнер */
 .checkbox_container {
-    height: 96px;
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    cursor: pointer;
-    font-size: 22px;
-    margin-top: 38px;
-    align-self: flex-start;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  height: 96px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  margin-top: 38px;
+  align-self: flex-start;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* Скрываем штатный checkbox */
 .checkbox_container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
 /* Создаём свой checkbox */
 .checkbox_checkmark {
-    border-radius: 6px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 22px;
-    width: 22px;
-    border: 2px solid #ccc;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border: 2px solid #ccc;
 }
 
 /* При наведении мышкой, добавим background */
-.checkbox_container:hover input~.checkbox_checkmark {
-    background-color: #ccc;
+.checkbox_container:hover input ~ .checkbox_checkmark {
+  background-color: #ccc;
 }
 
 /* Когда checkbox отмечен, добавим синий background */
-.checkbox_container input:checked~.checkbox_checkmark {
-    background-color: #CB11AB;
-    border: 2px solid #CB11AB;
+.checkbox_container input:checked ~ .checkbox_checkmark {
+  background-color: #cb11ab;
+  border: 2px solid #cb11ab;
 }
 
 /* Создадим индикатор, который скрыт, если не отмечен */
 .checkbox_checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 /* Покажем индикатор, когда отмечен */
-.checkbox_container input:checked~.checkbox_checkmark:after {
-    display: block;
+.checkbox_container input:checked ~ .checkbox_checkmark:after {
+  display: block;
 }
 
 /* Оформление индикатора */
 .checkbox_container .checkbox_checkmark:after {
-    left: 7px;
-    top: 4px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+  left: 7px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-.all{
-    height: auto;
-    margin-top: 0;
+.all {
+  height: auto;
+  margin-top: 0;
 }
 
+/* Mobile */
 @media screen and (max-width: 530px) {
-    .prod__info{
-        position: relative;
-    }
-    .checkbox_container{
-        position: absolute;
-        top: -25px;
-        left: 15px;
-    }
+  .prod__info {
+    position: relative;
   }
+  .checkbox_container {
+    position: absolute;
+    top: -25px;
+    left: 15px;
+  }
+}

@@ -27,7 +27,8 @@ h4 {
   justify-content: space-between;
   font-size: 24px;
 }
-.transport, .card__payment{
+.transport,
+.card__payment {
   margin-top: 24px;
 }
 .transport span,
@@ -115,14 +116,15 @@ h4 {
   align-items: center;
   font-size: 13px;
   font-weight: 400;
-} 
+}
 
+/* Mobile */
 @media screen and (max-width: 530px) {
-  .card__price{
-    margin-top: 32px  ;
+  .card__price {
+    margin-top: 32px;
     width: 100%;
   }
-  .transport h4 img{
+  .transport h4 img {
     height: fit-content;
   }
 }

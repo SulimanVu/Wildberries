@@ -1,13 +1,16 @@
-.application__process > div, form {
+.application__process > div,
+form {
   padding: 16px 24px 24px;
 }
-.delivery, .payment__method, form {
+.delivery,
+.payment__method,
+form {
   margin-top: 16px;
   border-radius: 16px;
   background-color: #fff;
 }
-.delivery{
-    margin-top: 40px;
+.delivery {
+  margin-top: 40px;
 }
 .del__header {
   display: flex;
@@ -48,29 +51,27 @@
 }
 
 /* payment__method */
-.card__info{
-    display: flex;
+.card__info {
+  display: flex;
 }
-.card__info span:nth-child(2){
-    margin-right: 12px;
-    margin-left: 8px;
+.card__info span:nth-child(2) {
+  margin-right: 12px;
+  margin-left: 8px;
 }
 
-
-
-
+/* Mobile */
 @media screen and (max-width: 530px) {
-  .extradition{
+  .extradition {
     flex-direction: column;
   }
-  .free{
+  .free {
     align-self: flex-start;
   }
-  .images__block{
+  .images__block {
     margin-top: 12px;
     align-self: flex-start;
   }
-  .images__block img{
+  .images__block img {
     width: 41px;
   }
 }
