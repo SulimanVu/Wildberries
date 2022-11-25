@@ -55,3 +55,22 @@
     margin-right: 12px;
     margin-left: 8px;
 }
+
+
+
+
+@media screen and (max-width: 530px) {
+  .extradition{
+    flex-direction: column;
+  }
+  .free{
+    align-self: flex-start;
+  }
+  .images__block{
+    margin-top: 12px;
+    align-self: flex-start;
+  }
+  .images__block img{
+    width: 41px;
+  }
+}

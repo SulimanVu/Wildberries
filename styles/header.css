@@ -10,7 +10,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 190px;
 }
 
 .menu>div {
@@ -31,10 +30,11 @@ header {
     color: #fff;
     line-height: 24px;
     margin-left: 16px;
+    width: 120px;
 }
 
 .input__block {
-    width: 67%;
+    width: 68%;
     align-self: center;
     margin: 0 auto;
     position: relative;
@@ -85,4 +85,47 @@ header {
 
 .icons>div:nth-child(2)>img {
     height: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .input__block {
+      width: 48%;
+    }
+  }
+@media screen and (max-width: 1300px) {
+    .input__block {
+      width: 55%;
+    }
+  }
+@media screen and (max-width: 530px) {
+    header{
+        margin: 0;
+    }
+    .menu div{
+        padding: 0;
+        margin-left: 13px;
+        margin-right: 16px;
+    }
+    .menu div img{
+        width: 24px;
+    }
+    .menu h3{
+        font-size: 24px;
+        width: 80%;
+        margin-left: 1px;
+    }
+    .input__block{
+        width: 10%;
+    }
+    .input__block input,
+    .icons {
+      display: none;
+    }
+    .input__block img{
+        width: 28px;
+        height: 28px;
+        filter: white;
+        top: -12px;
+        right: -10px;
+    }
 }
