@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/application.css" />
     <link rel="stylesheet" href="./styles/form.css" />
     <title>Wildberries</title>
+    <script src="https://unpkg.com/imask"></script>
   </head>
 
   <body>
@@ -315,18 +316,17 @@
           </div>
           <form action="#" method="post" name="form">
             <h4>Получатель</h4>
-            <div class="inputs__block">
-              <input type="text" placeholder="Имя" />
-              <input type="text" placeholder="Фамилия" />
+            <div class="inputs__block inputs__user">
+              <input id="name" type="text" placeholder="Имя" />
+              <input id="surname" type="text" placeholder="Фамилия" />
             </div>
-            <div class="inputs__block">
+            <div class="inputs__block inputs__data">
               <input
                 id="email"
                 type="email"
                 pattern=".+@globex\.com"
                 placeholder="Почта"
                 maxlength="64"
-                required
               />
               <input
                 id="tel"
@@ -380,7 +380,7 @@
             </div>
             <div class="check__block">
               <div class="check__payment">
-                <label class="checkbox_container buy">
+                <label class="checkbox_container">
                   <input type="checkbox" />
                   <span class="checkbox_checkmark"></span>
                 </label>
@@ -389,7 +389,7 @@
               <span>Спишем оплату с карты при получении</span>
             </div>
           </div>
-          <button>Заказать</button>
+          <button id="buy">Заказать</button>
           <div class="agreement">
             <img src="./images/check_mark.png" alt="#" />
             <span
@@ -404,7 +404,6 @@
       <h5>© 2022 ООО «Товары и точка»</h5>
     </footer>
 
-    <script src="https://unpkg.com/imask"></script>
     <script src="./index.js"></script>
   </body>
 </html>
