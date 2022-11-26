@@ -45,7 +45,7 @@ h4 {
   flex-direction: column;
 }
 .transport div span:nth-child(2) {
-  border-bottom: 1px dashed #cb11ab;
+  border-bottom: 1px dashed rgba(203, 17, 171, 0.2);
 }
 .return__shipp {
   margin-top: 12px;

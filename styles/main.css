@@ -15,6 +15,7 @@ main {
 }
 .green {
   color: #0cb477;
+  border-bottom: 1px dashed rgba(12, 180, 119, 0.2);
 }
 .purple {
   width: fit-content;
@@ -201,20 +202,19 @@ footer {
     justify-content: center;
   }
   .products > h2,
-  .see__all,
   .products__in__bascet {
     padding: 0 16px;
   }
   .products__in__bascet {
-    width: 100%;
+    width: 90%;
   }
   .see__all {
-    padding-bottom: 16px;
+    padding: 0 0 16px;
+    width: 90%;
+    margin: auto;
   }
   main section,
-  .products {
-    width: 100%;
-  }
+  .products,
   .prod__all__info {
     width: 100%;
   }
@@ -242,5 +242,20 @@ footer {
   }
   .prod__amount {
     width: 90%;
+  }
+  .all {
+    position: relative;
+    height: fit-content;
+  }
+  .absent__header {
+    margin-top: 48px;
+    font-weight: 600;
+    padding-bottom: 16px;
+  }
+  .see__all > div > label {
+    align-self: flex-end;
+  }
+  .see__all > div > span {
+    margin-left: 11px;
   }
 }

@@ -295,8 +295,10 @@
             </div>
             <div class="return__del">
               <img src="./images/price shipping.png" alt="#" />
-              <span>Обратная доставка товаров на склад при отказе — </span>
-              <span class="green">&nbsp;бесплатно</span>
+              <div>
+                <span>Обратная доставка товаров на склад при отказе — </span>
+                <span class="green">бесплатно</span>
+              </div>
             </div>
           </div>
           <div class="payment__method">
@@ -311,14 +313,21 @@
             </div>
             <span class="gray">Спишем оплату с карты при получении</span>
           </div>
-          <form>
+          <form action="#" method="post" name="form">
             <h4>Получатель</h4>
             <div class="inputs__block">
               <input type="text" placeholder="Имя" />
               <input type="text" placeholder="Фамилия" />
             </div>
             <div class="inputs__block">
-              <input type="email" placeholder="Почта" />
+              <input
+                id="email"
+                type="email"
+                pattern=".+@globex\.com"
+                placeholder="Почта"
+                maxlength="64"
+                required
+              />
               <input
                 id="tel"
                 type="tel"
@@ -371,7 +380,7 @@
             </div>
             <div class="check__block">
               <div class="check__payment">
-                <label class="checkbox_container">
+                <label class="checkbox_container buy">
                   <input type="checkbox" />
                   <span class="checkbox_checkmark"></span>
                 </label>
