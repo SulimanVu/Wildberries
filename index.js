@@ -46,3 +46,20 @@ button.addEventListener("click", () => {
     alert("Вы успешно приобрели эти продукты");
   }
 });
+
+// Выбрать все
+const all_checkbox = document.querySelectorAll(".checkbox_container");
+const keep = document.querySelector(".all");
+const checkbox = keep.firstElementChild;
+
+keep.addEventListener("click", () => {
+  if (checkbox.checked === true) {
+    for (let i = 0; i < all_checkbox.length - 1; i++) {
+      all_checkbox[i].firstElementChild.checked = true;
+    }
+  } else {
+    for (let i = 0; i < all_checkbox.length - 1; i++) {
+      all_checkbox[i].firstElementChild.checked = false;
+    }
+  }
+});
