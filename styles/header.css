@@ -39,7 +39,10 @@ header {
   margin: 0 auto;
   position: relative;
 }
-
+.input__block div,
+.h__basket {
+  position: relative;
+}
 .input__block input {
   width: 100%;
   color: #fff;
@@ -60,7 +63,21 @@ header {
   top: 8px;
   right: -25px;
 }
-
+.h__basket span:nth-child(1) {
+  font-family: "Segoe UI";
+  font-weight: 700;
+  font-size: 10px;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -3px;
+  right: 5px;
+  background-color: #F55123;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .icons {
   width: 170px;
   height: 56px;
