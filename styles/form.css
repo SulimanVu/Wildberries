@@ -27,10 +27,10 @@ form > h4 {
 #buy{
   cursor: pointer;
 }
-.error{
+.active{
   border-bottom: 2px solid red !important;
 }
-.error::placeholder{
+.active::placeholder{
   color: red;
 }
 /* laptop */

@@ -1,18 +1,3 @@
-// Валидация (задание масок) для телефона и ИНН
-document.addEventListener("DOMContentLoaded", () => {
-  const telElement = document.getElementById("tel"); // ищем наш единственный input
-  const innElement = document.getElementById("inn");
-  const maskOptions = {
-    // создаем объект параметров
-    mask: "+{7}(000)000-00-00", // задаем единственный параметр mask
-  };
-  const innMask = {
-    mask: "000000000000",
-  };
-  IMask(telElement, maskOptions); // запускаем плагин с переданными параметрами
-  IMask(innElement, innMask);
-});
-
 // Укорачивание описания товара
 const description = document.getElementsByClassName("prod__header");
 const windowOuterWidth = window.innerWidth;
@@ -23,27 +8,105 @@ if (windowOuterWidth < 531) {
   }
 }
 
+// Проверка на ввод номера
+window.addEventListener("DOMContentLoaded", function () {
+  [].forEach.call(document.querySelectorAll("#tel"), function (input) {
+    var keyCode;
+    function mask(event) {
+      event.keyCode && (keyCode = event.keyCode);
+      var pos = this.selectionStart;
+      if (pos < 3) event.preventDefault();
+      var matrix = "+7 (___) ___ __ __",
+        i = 0,
+        def = matrix.replace(/\D/g, ""),
+        val = this.value.replace(/\D/g, ""),
+        new_value = matrix.replace(/[_\d]/g, function (a) {
+          return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
+        });
+      i = new_value.indexOf("_");
+      if (i != -1) {
+        i < 5 && (i = 3);
+        new_value = new_value.slice(0, i);
+      }
+      var reg = matrix
+        .substr(0, this.value.length)
+        .replace(/_+/g, function (a) {
+          return "\\d{1," + a.length + "}";
+        })
+        .replace(/[+()]/g, "\\$&");
+      reg = new RegExp("^" + reg + "$");
+      if (
+        !reg.test(this.value) ||
+        this.value.length < 5 ||
+        (keyCode > 47 && keyCode < 58)
+      )
+        this.value = new_value;
+      if (event.type == "blur" && this.value.length < 5) this.value = "";
+      if (new_value.length != 18) {
+        this.setAttribute("class", "error");
+      } else {
+        this.removeAttribute("class");
+      }
+    }
+
+    input.addEventListener("input", mask, false);
+    input.addEventListener("focus", mask, false);
+    input.addEventListener("blur", mask, false);
+  });
+});
+//Проверка на email
+let email = document.querySelector("#email");
+email.addEventListener("input", (e) => {
+  if (
+    e.target.value.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/)
+  ) {
+    e.target.removeAttribute("class");
+  } else {
+    e.target.classList.add("error");
+  }
+});
+// Проверка на inn
+let inn = document.querySelector("#inn");
+inn.addEventListener("input", (e) => {
+  e.target.value = e.target.value.replace(/\D/g, "");
+  if (e.target.value.length !== 12) {
+    e.target.classList.add("error");
+  } else {
+    e.target.removeAttribute("class");
+  }
+});
+
+// Проверка на текстовые поля
+let text = document.querySelectorAll("#surname, #name");
+
+for (let i = 0; i < text.length; i++) {
+  text[i].addEventListener("input", (e) => {
+    e.target.value = e.target.value.replace(/[0-9._=+*!@#$%^&()~`]+/, "");
+    if (e.target.value == "") {
+      e.target.setAttribute("class", "error");
+    } else {
+      e.target.removeAttribute("class");
+    }
+  });
+}
+
 // Оформление покупки
 const button = document.getElementById("buy");
 const form = document.querySelector("form");
 const inputs = form.querySelectorAll("input");
 
 button.addEventListener("click", () => {
-  let result = [];
   for (let i = 0; i < inputs.length; i++) {
-    if (!inputs[i].value) {
-      inputs[i].setAttribute("class", "error");
+    if (
+      inputs[i].getAttribute("class") == "error" ||
+      inputs[i].getAttribute("class") == null ||
+      inputs[i].getAttribute("class") == ""
+    ) {
+      inputs[i].classList.add("active");
       if (windowOuterWidth < 550) {
         form.scrollIntoView({ behavior: "smooth" });
       }
-    } else {
-      inputs[i].removeAttribute("class");
-      result.push(inputs[i].value);
     }
-  }
-
-  if (result.length == 5) {
-    alert("Вы успешно приобрели эти продукты");
   }
 });
 
