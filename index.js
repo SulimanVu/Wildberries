@@ -97,15 +97,13 @@ const inputs = form.querySelectorAll("input");
 
 button.addEventListener("click", () => {
   for (let i = 0; i < inputs.length; i++) {
-    if (
-      inputs[i].getAttribute("class") == "error" ||
-      inputs[i].getAttribute("class") == null ||
-      inputs[i].getAttribute("class") == ""
-    ) {
+    if (inputs[i].getAttribute("class") == "error" || inputs[i].value == "") {
       inputs[i].classList.add("active");
       if (windowOuterWidth < 550) {
         form.scrollIntoView({ behavior: "smooth" });
       }
+    } else {
+      inputs[i].classList.remove("active");
     }
   }
 });
