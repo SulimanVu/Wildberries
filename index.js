@@ -124,3 +124,39 @@ keep.addEventListener("click", () => {
     }
   }
 });
+
+// Формирование цены
+const prod_checkbox = document.querySelectorAll(
+  ".stock .prod__cards .prod__info .checkbox_container"
+);
+let price_number = document.querySelector(".price__number");
+
+for (let i = 0; i < prod_checkbox.length; i++) {
+  prod_checkbox[i].firstElementChild.addEventListener("click", () => {
+    if (prod_checkbox[i].firstElementChild.checked == true) {
+      price_number.innerHTML =
+        Number(price_number.innerHTML) +
+        Number(
+          prod_checkbox[
+            i
+          ].parentNode.parentNode.lastElementChild.lastElementChild.
+          firstElementChild.firstElementChild.innerHTML.replace(
+            / /g,
+            ""
+          )
+        );
+    } else {
+      price_number.innerHTML =
+        Number(price_number.innerHTML) -
+        Number(
+          prod_checkbox[
+            i
+          ].parentNode.parentNode.lastElementChild.lastElementChild.
+          firstElementChild.firstElementChild.innerHTML.replace(
+            / /g,
+            ""
+          )
+        );
+    }
+  });
+}
