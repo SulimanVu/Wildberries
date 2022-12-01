@@ -116,22 +116,32 @@ const checkbox = keep.firstElementChild;
 const prod_checkbox = document.querySelectorAll(".stock .checkbox_container");
 const prod_price = document.querySelectorAll(".actual__price");
 let price_number = document.querySelector(".price__number");
+let current_price_number = document.querySelector(".current_price_number");
+let selected = document.querySelector(".selected");
+let count_bascet = document.querySelector(".h__basket");
+
+count_bascet.firstElementChild.innerHTML = prod_checkbox.length;
 
 let sum = 0;
 for (let i = 0; i < prod_price.length; i++) {
   sum += +prod_price[i].innerHTML.replace(/ /g, "");
 }
+
 keep.addEventListener("click", () => {
   if (checkbox.checked == true) {
     for (let i = 0; i < all_checkbox.length - 1; i++) {
       all_checkbox[i].firstElementChild.checked = true;
     }
     price_number.innerHTML = sum;
+    current_price_number.innerHTML = sum;
+    selected.innerHTML = prod_checkbox.length;
   } else {
     for (let i = 0; i < all_checkbox.length - 1; i++) {
       all_checkbox[i].firstElementChild.checked = false;
     }
     price_number.innerHTML = 0;
+    current_price_number.innerHTML = 0;
+    selected.innerHTML = 0;
   }
 });
 
@@ -143,10 +153,22 @@ for (let i = 0; i < prod_checkbox.length; i++) {
       price_number.innerHTML =
         Number(price_number.innerHTML) +
         Number(prod_price[i].innerHTML.replace(/ /g, ""));
+
+      current_price_number.innerHTML =
+        Number(current_price_number.innerHTML) +
+        Number(prod_price[i].innerHTML.replace(/ /g, ""));
+
+      selected.innerHTML = +selected.innerHTML + 1;
     } else {
       price_number.innerHTML =
         Number(price_number.innerHTML) -
         Number(prod_price[i].innerHTML.replace(/ /g, ""));
+
+      current_price_number.innerHTML =
+        Number(current_price_number.innerHTML) -
+        Number(prod_price[i].innerHTML.replace(/ /g, ""));
+
+      selected.innerHTML = +selected.innerHTML - 1;
     }
   });
 }
