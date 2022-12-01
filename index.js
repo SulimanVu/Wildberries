@@ -112,24 +112,30 @@ button.addEventListener("click", () => {
 const all_checkbox = document.querySelectorAll(".checkbox_container");
 const keep = document.querySelector(".all");
 const checkbox = keep.firstElementChild;
+// Для формирования цены
+const prod_checkbox = document.querySelectorAll(".stock .checkbox_container");
+const prod_price = document.querySelectorAll(".actual__price");
+let price_number = document.querySelector(".price__number");
 
+let sum = 0;
+for (let i = 0; i < prod_price.length; i++) {
+  sum += +prod_price[i].innerHTML.replace(/ /g, "");
+}
 keep.addEventListener("click", () => {
-  if (checkbox.checked === true) {
+  if (checkbox.checked == true) {
     for (let i = 0; i < all_checkbox.length - 1; i++) {
       all_checkbox[i].firstElementChild.checked = true;
     }
+    price_number.innerHTML = sum;
   } else {
     for (let i = 0; i < all_checkbox.length - 1; i++) {
       all_checkbox[i].firstElementChild.checked = false;
     }
+    price_number.innerHTML = 0;
   }
 });
 
 // Формирование цены
-const prod_checkbox = document.querySelectorAll(".stock .checkbox_container");
-const prod_price = document.querySelectorAll(".actual__price");
-
-let price_number = document.querySelector(".price__number");
 
 for (let i = 0; i < prod_checkbox.length; i++) {
   prod_checkbox[i].firstElementChild.addEventListener("click", () => {
