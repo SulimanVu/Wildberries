@@ -108,6 +108,10 @@ main {
   width: 30%;
   margin: auto;
   text-align: center;
+  cursor: default;
+}
+.amount div:not(:nth-child(2)) {
+  cursor: pointer;
 }
 .balance {
   color: red;
@@ -168,8 +172,7 @@ main {
   font-size: 13px;
   color: #8a898e;
   text-decoration: line-through;
-  border-bottom: 1px #8a898e;
-  border-bottom-style: dashed;
+  border-bottom: 1px dashed #8a898e;
 }
 
 /* absent */

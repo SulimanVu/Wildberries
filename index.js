@@ -115,6 +115,11 @@ const all_checkbox = document.querySelectorAll(".checkbox_container");
 const keep = document.querySelector(".all");
 const checkbox = keep.firstElementChild;
 // Для формирования цены
+const amount = document.querySelectorAll(".amount");
+const increment = document.querySelectorAll(".increment");
+const decrement = document.querySelectorAll(".decrement");
+const in_stock = document.querySelectorAll(".in__stock");
+
 const prod_checkbox = document.querySelectorAll(".stock .checkbox_container");
 const prod_price = document.querySelectorAll(".actual__price");
 let price_number = document.querySelector(".price__number");
@@ -147,7 +152,7 @@ keep.addEventListener("click", () => {
   }
 });
 
-// Формирование цены
+// Формирование цены при клике на input
 for (let i = 0; i < prod_checkbox.length; i++) {
   prod_checkbox[i].firstElementChild.addEventListener("click", () => {
     if (prod_checkbox[i].firstElementChild.checked == true) {
@@ -174,12 +179,59 @@ for (let i = 0; i < prod_checkbox.length; i++) {
   });
 }
 
+//Формирование цены при клике на кнопки
+for (let i = 0; i < amount.length; i++) {
+  increment[i].addEventListener("click", () => {
+    if (+in_stock[i].innerHTML > 0) {
+      in_stock[i].innerHTML = Number(in_stock[i].innerHTML) - 1;
+    }
+  });
+
+  decrement[i].addEventListener("click", () => {
+    in_stock[i].innerHTML = Number(in_stock[i].innerHTML) + 1;
+  });
+}
+
 // Адаптив Mobile
 
 let size = document.querySelectorAll(".prod__size");
+let products = document.querySelectorAll(".stock .prod__price");
+let producer = document.querySelectorAll(".producer_block");
+let prod_all = document.querySelectorAll(".stock .prod__all__info");
 
 if (windowOuterWidth < 550) {
   for (let i = 0; i < size.length; i++) {
-    console.log(size[i].lastElementChild.innerHTML);
+    size[i].style.visibility = "hidden";
+    size[i].style.width = 0;
+    size[i].style.height = 0;
+  }
+  for (let i = 0; i < products.length; i++) {
+    products[i].style.visibility = "hidden";
+    products[i].style.width = 0;
+    products[i].style.height = 0;
+    producer[i].lastElementChild.style.display = "none";
+
+    let all = document.createElement("div");
+    let old_price = document.createElement("div");
+    let actual_price = document.createElement("div");
+
+    actual_price.prepend(prod_price[i].innerHTML + " сом");
+    old_price.prepend(products[i].lastElementChild.innerHTML);
+
+    all.append(actual_price, old_price);
+    all.style.display = "flex";
+    all.style.width = "100%";
+    all.firstElementChild.style.fontSize = "16px";
+    all.firstElementChild.style.marginRight = "5px";
+    all.firstElementChild.style.fontWeight = 700;
+    all.firstElementChild.style.wordSpacing = "-3px";
+
+    all.lastElementChild.style.fontSize = "13px";
+    all.lastElementChild.style.wordSpacing = "-2px";
+    all.lastElementChild.style.textDecoration = "line-through";
+    all.lastElementChild.style.borderBottom = "1px dashed #8a898e";
+    all.lastElementChild.style.color = "#8a898e";
+
+    prod_all[i].prepend(all);
   }
 }
