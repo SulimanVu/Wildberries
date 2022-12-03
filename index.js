@@ -4,7 +4,9 @@ const windowOuterWidth = window.innerWidth;
 
 if (windowOuterWidth < 531) {
   for (let i = 0; i < description.length; i++) {
-    description[i].innerHTML = description[i].innerText.slice(0, 44) + "...";
+    if (description[i].innerHTML.length > 44) {
+      description[i].innerHTML = description[i].innerText.slice(0, 44) + "...";
+    }
   }
 }
 
@@ -146,7 +148,6 @@ keep.addEventListener("click", () => {
 });
 
 // Формирование цены
-
 for (let i = 0; i < prod_checkbox.length; i++) {
   prod_checkbox[i].firstElementChild.addEventListener("click", () => {
     if (prod_checkbox[i].firstElementChild.checked == true) {
@@ -171,4 +172,14 @@ for (let i = 0; i < prod_checkbox.length; i++) {
       selected.innerHTML = +selected.innerHTML - 1;
     }
   });
+}
+
+// Адаптив Mobile
+
+let size = document.querySelectorAll(".prod__size");
+
+if (windowOuterWidth < 550) {
+  for (let i = 0; i < size.length; i++) {
+    console.log(size[i].lastElementChild.innerHTML);
+  }
 }
