@@ -1,17 +1,22 @@
 form {
   font-family: "Segoe UI";
 }
+.form__item {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
 .inputs__block {
   display: flex;
   width: 80%;
 }
-form div:nth-child(2) {
+form > div:nth-child(2) {
   margin-bottom: 16px;
 }
-.inputs__block input:not(:last-child) {
+.form__item:not(:last-child) {
   margin-right: 24px;
 }
-.inputs__block input {
+.form__item input {
   font-family: "Segoe UI";
   padding: 3px 0;
   font-size: 16px;
@@ -20,17 +25,39 @@ form div:nth-child(2) {
   outline: none;
   width: 100%;
 }
+.form__item label {
+  font-size: 16px;
+  color: #9797af;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: -3px;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 40px;
+  transition: 0.3s;
+}
+.form__item span {
+  font-size: 12px;
+  font-weight: 400;
+}
+input:focus ~ label,
+input:not(:focus):valid ~ label,
+input[type="email"]:valid ~ label {
+  top: -25px;
+  font-size: 13px;
+}
 form > h4 {
   font-size: 18px;
   margin-bottom: 16px;
 }
-#buy{
+#buy {
   cursor: pointer;
 }
-.active{
+.active {
   border-bottom: 2px solid red !important;
 }
-.active::placeholder{
+.active ~ label {
   color: red;
 }
 /* laptop */

@@ -55,7 +55,7 @@ main {
 }
 
 /* prod-cards */
-.sold .producer_block{
+.sold .producer_block {
   display: none;
 }
 .prod__cards {
@@ -134,7 +134,7 @@ main {
   font-size: 13px;
   display: flex;
 }
-.prod__block{
+.prod__block {
   display: flex;
 }
 .prod__color {

@@ -21,7 +21,6 @@
         <h3>ТОВАРЫ И ТОЧКА</h3>
       </div>
       <div class="input__block">
-        <input type="text" placeholder="Я ищу..." />
         <img src="./images/search.png" alt="#" />
       </div>
       <div class="icons">
@@ -47,7 +46,7 @@
             <label class="checkbox_container all">
               <input type="checkbox" />
               <span class="checkbox_checkmark"></span>
-            </label>
+            Имя</label>
             <span>Выбрать все</span>
           </div>
           <img src="./images/arrow.png" alt="#" />
@@ -60,7 +59,7 @@
               <label class="checkbox_container">
                 <input type="checkbox" />
                 <span class="checkbox_checkmark"></span>
-              </label>
+              Имя</label>
               <div class="prod__img">
                 <img src="./images/product_img1.png" alt="" />
               </div>
@@ -104,7 +103,7 @@
               <label class="checkbox_container">
                 <input type="checkbox" />
                 <span class="checkbox_checkmark"></span>
-              </label>
+              Имя</label>
               <div class="prod__img">
                 <img src="./images/product_img2.png" alt="" />
               </div>
@@ -150,7 +149,7 @@
               <label class="checkbox_container">
                 <input type="checkbox" />
                 <span class="checkbox_checkmark"></span>
-              </label>
+              Имя</label>
               <div class="prod__img">
                 <img src="./images/product_img3.png" alt="" />
               </div>
@@ -338,44 +337,56 @@
           <form action="#" method="post" name="form">
             <h4>Получатель</h4>
             <div class="inputs__block inputs__user">
-              <input
+              <div class="form__item">
+                <input
+                required
                 id="name"
                 type="text"
-                placeholder="Имя"
-                pattern="[a-zA-Z]+"
                 minlength="2"
                 maxlength="20"
               />
-              <input
+              <label>Имя</label>
+              </div>
+              <div class="form__item">
+                <input
+                required
                 id="surname"
                 type="text"
-                placeholder="Фамилия"
-                pattern="[a-zA-Z]+"
                 minlength="2"
                 maxlength="20"
               />
+              <label>Фамилия</label>
+              </div>
             </div>
             <div class="inputs__block inputs__data">
-              <input
+              <div class="form__item">
+                <input
+                required
                 id="email"
-                type="email"
-                pattern=".+@globex\.com"
-                placeholder="Почта"
+                type="text"
                 maxlength="64"
               />
-              <input
+              <label>Почта</label>
+              </div>
+              <div class="form__item">
+                <input
+                required
                 id="tel"
                 type="tel"
-                placeholder="Телефон"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               />
-              <input
+              <label>Телефон</label>
+              </div>
+              <div class="form__item">
+                <input
+                required
                 id="inn"
                 type="text"
-                placeholder="ИНН"
                 minlength="12"
                 maxlength="12"
               />
+              <label>ИНН</label>
+              <span>Для таможенного оформления</span>
+              </div>
             </div>
           </form>
         </section>
