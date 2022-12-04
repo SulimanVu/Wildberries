@@ -130,6 +130,7 @@ let count_bascet = document.querySelector(".h__basket");
 count_bascet.firstElementChild.innerHTML = prod_checkbox.length;
 
 let sum = 0;
+
 for (let i = 0; i < prod_price.length; i++) {
   sum += +prod_price[i].innerHTML.replace(/ /g, "");
 }
@@ -139,8 +140,12 @@ keep.addEventListener("click", () => {
     for (let i = 0; i < all_checkbox.length - 1; i++) {
       all_checkbox[i].firstElementChild.checked = true;
     }
-    price_number.innerHTML = sum;
-    current_price_number.innerHTML = sum;
+    price_number.innerHTML = parseInt(sum).toLocaleString("ru-Ru");
+    price_number.style.wordSpacing = "-4px";
+
+    current_price_number.innerHTML = parseInt(sum).toLocaleString("ru-Ru");
+    current_price_number.style.wordSpacing = "-2px";
+
     selected.innerHTML = prod_checkbox.length;
   } else {
     for (let i = 0; i < all_checkbox.length - 1; i++) {
@@ -157,23 +162,27 @@ for (let i = 0; i < prod_checkbox.length; i++) {
   prod_checkbox[i].firstElementChild.addEventListener("click", () => {
     if (prod_checkbox[i].firstElementChild.checked == true) {
       price_number.innerHTML =
-        Number(price_number.innerHTML) +
+        Number(price_number.innerHTML.replace(/ /g, "")) +
         Number(prod_price[i].innerHTML.replace(/ /g, ""));
-
+      price_number.innerHTML = parseInt(price_number.innerHTML).toLocaleString("ru-Ru");
+      
       current_price_number.innerHTML =
-        Number(current_price_number.innerHTML) +
+        Number(current_price_number.innerHTML.replace(/ /g,"")) +
         Number(prod_price[i].innerHTML.replace(/ /g, ""));
-
+      current_price_number.innerHTML = parseInt(current_price_number.innerHTML).toLocaleString("ru-Ru");
+      
       selected.innerHTML = +selected.innerHTML + 1;
     } else {
       price_number.innerHTML =
-        Number(price_number.innerHTML) -
+        Number(price_number.innerHTML.replace(/ /g,"")) -
         Number(prod_price[i].innerHTML.replace(/ /g, ""));
+      price_number.innerHTML = parseInt(price_number.innerHTML).toLocaleString("ru-Ru");
 
       current_price_number.innerHTML =
-        Number(current_price_number.innerHTML) -
+        Number(current_price_number.innerHTML.replace(/ /g,"")) -
         Number(prod_price[i].innerHTML.replace(/ /g, ""));
-
+      current_price_number.innerHTML = parseInt(current_price_number.innerHTML).toLocaleString("ru-Ru");
+      
       selected.innerHTML = +selected.innerHTML - 1;
     }
   });
