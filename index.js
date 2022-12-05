@@ -140,11 +140,12 @@ keep.addEventListener("click", () => {
     for (let i = 0; i < all_checkbox.length - 1; i++) {
       all_checkbox[i].firstElementChild.checked = true;
     }
-    price_number.innerHTML = parseInt(sum).toLocaleString("ru-Ru");
+    price_number.innerHTML = parseInt(sum).toLocaleString();
     price_number.style.wordSpacing = "-4px";
 
-    current_price_number.innerHTML = parseInt(sum).toLocaleString("ru-Ru");
+    current_price_number.innerHTML = parseInt(sum).toLocaleString();
     current_price_number.style.wordSpacing = "-2px";
+    current_price_number.style.textDecoration = "line-through";
 
     selected.innerHTML = prod_checkbox.length;
   } else {

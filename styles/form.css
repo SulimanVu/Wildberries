@@ -40,6 +40,7 @@ form > div:nth-child(2) {
 .form__item span {
   font-size: 12px;
   font-weight: 400;
+  visibility: hidden;
 }
 .form__item input:focus ~ label,
 .form__item input:not(:focus):valid ~ label {
@@ -57,6 +58,10 @@ form > h4 {
   border-bottom: 2px solid red !important;
 }
 .active ~ label {
+  color: red;
+}
+.active ~ span {
+  visibility: visible !important;
   color: red;
 }
 /* laptop */
