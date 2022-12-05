@@ -164,25 +164,21 @@ for (let i = 0; i < prod_checkbox.length; i++) {
       price_number.innerHTML =
         Number(price_number.innerHTML.replace(/ /g, "")) +
         Number(prod_price[i].innerHTML.replace(/ /g, ""));
-      price_number.innerHTML = parseInt(price_number.innerHTML).toLocaleString("ru-Ru");
-      
+
       current_price_number.innerHTML =
-        Number(current_price_number.innerHTML.replace(/ /g,"")) +
+        Number(current_price_number.innerHTML.replace(/ /g, "")) +
         Number(prod_price[i].innerHTML.replace(/ /g, ""));
-      current_price_number.innerHTML = parseInt(current_price_number.innerHTML).toLocaleString("ru-Ru");
-      
+
       selected.innerHTML = +selected.innerHTML + 1;
     } else {
       price_number.innerHTML =
-        Number(price_number.innerHTML.replace(/ /g,"")) -
+        Number(price_number.innerHTML.replace(/ /g, "")) -
         Number(prod_price[i].innerHTML.replace(/ /g, ""));
-      price_number.innerHTML = parseInt(price_number.innerHTML).toLocaleString("ru-Ru");
 
       current_price_number.innerHTML =
-        Number(current_price_number.innerHTML.replace(/ /g,"")) -
+        Number(current_price_number.innerHTML.replace(/ /g, "")) -
         Number(prod_price[i].innerHTML.replace(/ /g, ""));
-      current_price_number.innerHTML = parseInt(current_price_number.innerHTML).toLocaleString("ru-Ru");
-      
+
       selected.innerHTML = +selected.innerHTML - 1;
     }
   });

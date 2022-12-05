@@ -41,8 +41,8 @@ form > div:nth-child(2) {
   font-size: 12px;
   font-weight: 400;
 }
-input:focus ~ label,
-input:not(:focus):valid ~ label{
+.form__item input:focus ~ label,
+.form__item input:not(:focus):valid ~ label {
   top: -25px;
   font-size: 13px;
 }

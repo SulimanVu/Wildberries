@@ -24,7 +24,7 @@ header {
   box-sizing: border-box;
 }
 
-.menu h3 {
+.menu > h3 {
   font-size: 28px;
   font-weight: 600;
   color: #fff;
@@ -39,7 +39,7 @@ header {
   margin: 0 auto;
   position: relative;
 }
-.input__block div,
+.input__block,
 .h__basket {
   position: relative;
 }
