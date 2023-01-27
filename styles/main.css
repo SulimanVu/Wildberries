@@ -3,12 +3,11 @@ body {
   font-family: "Segoe UI";
   background-color: #6725a8;
 }
-
 main {
-  width: 100%;
+  width: 1400px;
   display: flex;
   justify-content: space-between;
-  padding: 34px 24px;
+  padding: 0 24px 50px;
   box-sizing: border-box;
   border-radius: 20px;
   background-color: rgb(246, 246, 250);
@@ -26,11 +25,21 @@ main {
   color: #9797af;
 }
 .products {
-  width: 65%;
+  width: 891px;
 }
-
+.products h2 {
+  font-family: "Segoe UI";
+  font-weight: 700;
+  margin-top: 34px;
+  margin-bottom: 28px;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.01rem;
+}
 .card__price {
-  width: 28%;
+  margin-top: 22px;
+  width: 429px;
+  height: 572px;
 }
 
 /* see-all */
@@ -39,11 +48,14 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
-
+.see__all > div > span {
+  margin-left: 11px;
+  margin-top: -2px;
+}
 .see__all > img {
   width: 16px;
   height: 10px;
@@ -55,16 +67,30 @@ main {
 }
 
 /* prod-cards */
+.sold > div {
+  margin-bottom: 32px;
+}
+.sold .prod__all__info {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a0a0a4;
+}
 .sold .producer_block {
   display: none;
 }
 .prod__cards {
-  margin-top: 20px;
+  padding-top: 12px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
+  min-height: 108px;
 }
+
 .prod__info {
-  width: 400px;
+  width: 275px;
   word-wrap: break-word;
   display: flex;
 }
@@ -76,9 +102,10 @@ main {
   line-height: 24px;
   margin-block-start: 0;
   margin-block-end: 0;
+  margin-bottom: 8px;
 }
 .prod__img {
-  margin: 11px 16px 0 12px;
+  margin: 0 16px 0 13px;
   align-self: flex-start;
   width: 72px;
   height: 96px;
@@ -93,49 +120,79 @@ main {
   width: 226px;
   display: flex;
   justify-content: space-between;
-  margin: 8px 0 0;
 }
 .amount {
   width: 100px;
   height: 44px;
+  padding: 0 10px 0 8px;
   display: flex;
   justify-content: space-between;
-  border-radius: 5px;
-  overflow: hidden;
+  align-items: center;
+  border-radius: 8px;
   background-color: #fff;
-}
-.amount div {
-  width: 30%;
-  margin: auto;
-  text-align: center;
-  cursor: default;
+  box-sizing: border-box;
 }
 .amount div:not(:nth-child(2)) {
   cursor: pointer;
 }
+.increment,
+.decrement {
+  font-family: "Segoe UI";
+  font-style: normal;
+  width: 9px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+.in__stock {
+  width: 44px;
+  height: 23px;
+  margin: auto;
+  text-align: center;
+}
 .balance {
-  color: red;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
   font-size: 13px;
+  line-height: 16px;
+  color: #ff3b30;
+  margin-top: 8px;
 }
 .prod__like__delete {
-  margin-top: 8px;
   text-align: end;
+  margin-top: 10px;
 }
 .prod__like__delete img:nth-child(2) {
   margin-left: 16px;
 }
 .prod__all__info {
-  padding-top: 12px;
-  line-height: 28px;
+  padding: 0;
+  margin: 0;
   font-size: 13px;
   box-sizing: border-box;
+}
+.prod__all__info h1 {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
 }
 .prod__size {
   font-size: 13px;
   display: flex;
 }
 .prod__block {
+  margin: 0 0 8px;
   display: flex;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
 }
 .prod__color {
   font-size: 13px;
@@ -149,11 +206,17 @@ main {
   height: 36px;
 }
 .producer {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
   font-size: 13px;
-  color: #8a898e;
+  line-height: 16px;
+  color: #a0a0a4;
+}
+.producer:nth-child(2) {
+  margin-top: 4px;
 }
 .prod__price {
-  width: 110px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -168,6 +231,7 @@ main {
 .prod__price h3 span {
   font-size: 16px;
 }
+
 .old__price {
   font-size: 13px;
   color: #8a898e;
@@ -198,7 +262,6 @@ footer {
   font-weight: 400;
   color: #fff;
 }
-
 /* Mobile */
 @media screen and (max-width: 530px) {
   .menu div:nth-child(1) {
@@ -211,8 +274,7 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
-  .products > h2,
-  .products__in__bascet {
+  .products > h2 {
     padding: 0 16px;
   }
   .products__in__bascet {
@@ -241,9 +303,6 @@ footer {
     margin-block-end: 0;
     width: 100%;
   }
-  .prod__price {
-    /* display: none; */
-  }
   .prod__cards {
     flex-direction: column;
   }
@@ -267,8 +326,5 @@ footer {
   }
   .see__all > div > label {
     align-self: flex-end;
-  }
-  .see__all > div > span {
-    margin-left: 11px;
   }
 }

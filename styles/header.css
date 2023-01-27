@@ -1,8 +1,24 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/SegoeUI.woff"), local("Segoe UI") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/SegoeUI.woff"), local("Segoe UI Bold") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
 header {
-  width: 95%;
-  margin: 16px auto;
+  width: 1400px;
+  height: 88px;
+  padding: 16px 24px;
   display: flex;
   justify-content: space-between;
+  font-family: "Segoe UI";
+  box-sizing: border-box;
 }
 
 .menu {
@@ -19,22 +35,30 @@ header {
   border-radius: 8px;
   padding: 12px 10px;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
   box-sizing: border-box;
 }
 
 .menu > h3 {
-  font-size: 28px;
+  width: 106px;
   font-weight: 600;
-  color: #fff;
+  font-size: 28px;
   line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
   margin-left: 16px;
-  width: 120px;
+  width: fit-content;
+  font-variant: small-caps;
 }
-
+.menu span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+}
 .input__block {
-  width: 68%;
+  width: 970px;
   align-self: center;
   margin: 0 auto;
   position: relative;
@@ -46,6 +70,9 @@ header {
 .input__block input {
   width: 100%;
   color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   border-radius: 20px;
   padding: 12px 20px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -64,9 +91,8 @@ header {
   right: -25px;
 }
 .h__basket span:nth-child(1) {
-  font-family: "Segoe UI";
-  font-weight: 700;
-  font-size: 10px;
+  font-weight: 400;
+  font-size: 13px;
   position: absolute;
   width: 16px;
   height: 16px;

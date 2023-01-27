@@ -140,10 +140,10 @@ keep.addEventListener("click", () => {
     for (let i = 0; i < all_checkbox.length - 1; i++) {
       all_checkbox[i].firstElementChild.checked = true;
     }
-    price_number.innerHTML = parseInt(sum).toLocaleString();
+    price_number.innerHTML = parseInt(sum).toLocaleString("ru-RU");
     price_number.style.wordSpacing = "-4px";
 
-    current_price_number.innerHTML = parseInt(sum).toLocaleString();
+    current_price_number.innerHTML = parseInt(sum).toLocaleString("ru-RU");
     current_price_number.style.wordSpacing = "-2px";
     current_price_number.style.textDecoration = "line-through";
 
@@ -241,3 +241,19 @@ if (windowOuterWidth < 550) {
     prod_all[i].prepend(all);
   }
 }
+
+// Присвоение шрифта в зависимости от размера суммы
+
+let font_price = document.querySelectorAll(".actual__price");
+
+font_price.forEach((item) => {
+  let price = Number(item.innerHTML.replace(/\s/g, ""));
+  console.log(item.innerHTML.replace(/\s/g, ""));
+  if (price > 100000) {
+    item.style.fontSize = "16px";
+    item.style.lineHeight = "24px";
+  } else {
+    item.style.fontSize = "20px";
+    item.style.lineHeight = "28px";
+  }
+});

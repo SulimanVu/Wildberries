@@ -1,12 +1,12 @@
 /* label контейнер */
 .checkbox_container {
-  height: 96px;
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 22px;
   cursor: pointer;
   font-size: 22px;
-  margin-top: 38px;
+  margin-top: 29px;
+  margin-left: -1px;
   align-self: flex-start;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -29,8 +29,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 22px;
-  width: 22px;
+  height: 20px;
+  width: 20px;
   border: 2px solid #ccc;
 }
 
@@ -59,15 +59,12 @@
 
 /* Оформление индикатора */
 .checkbox_container .checkbox_checkmark:after {
-  left: 7px;
-  top: 4px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  content: url("../images/path stroke.svg");
+  width: 12.48px;
+  height: 10.16px;
+  position: absolute;
+  left: 4.26px;
+  top: -6.5px;
 }
 .all {
   height: auto;
