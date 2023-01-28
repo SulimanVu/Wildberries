@@ -17,8 +17,12 @@ main {
   border-bottom: 1px dashed rgba(12, 180, 119, 0.2);
 }
 .purple {
+  margin-top: 3px;
   width: fit-content;
   color: #cb11ab;
+}
+.purple span:first-child{
+  letter-spacing: -1.5px;
 }
 .gray {
   font-size: 13px;
@@ -37,6 +41,7 @@ main {
   letter-spacing: -0.01rem;
 }
 .card__price {
+  font-family: "Segoe UI";
   margin-top: 22px;
   width: 429px;
   height: 572px;
@@ -82,13 +87,15 @@ main {
   display: none;
 }
 .prod__cards {
-  padding-top: 12px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   min-height: 108px;
 }
-
+.prod__cards:nth-child(1) {
+  padding-top: 12px;
+  margin-bottom: 20px;
+}
 .prod__info {
   width: 275px;
   word-wrap: break-word;
@@ -124,13 +131,12 @@ main {
 .amount {
   width: 100px;
   height: 44px;
-  padding: 0 10px 0 8px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  position: relative;
   border-radius: 8px;
   background-color: #fff;
-  box-sizing: border-box;
+  margin-bottom: 4px;
 }
 .amount div:not(:nth-child(2)) {
   cursor: pointer;
@@ -140,18 +146,31 @@ main {
   font-family: "Segoe UI";
   font-style: normal;
   width: 9px;
-  margin: 0 auto;
-  text-align: center;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.01em;
 }
+.increment {
+  position: absolute;
+  width: 9px;
+  left: 10px;
+  top: 8px;
+  bottom: 25%;
+}
+.decrement {
+  position: absolute;
+  width: 9px;
+  right: 12px;
+  top: 8px;
+  bottom: 25%;
+}
 .in__stock {
   width: 44px;
   height: 23px;
-  margin: auto;
+  margin: 0px auto 2px;
   text-align: center;
+  box-sizing: border-box;
 }
 .balance {
   font-family: "Segoe UI";
@@ -160,14 +179,14 @@ main {
   font-size: 13px;
   line-height: 16px;
   color: #ff3b30;
-  margin-top: 8px;
 }
 .prod__like__delete {
   text-align: end;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 .prod__like__delete img:nth-child(2) {
-  margin-left: 16px;
+  margin-right: 1.5px;
+  margin-left: 14.5px;
 }
 .prod__all__info {
   padding: 0;
@@ -237,19 +256,20 @@ main {
   color: #8a898e;
   text-decoration: line-through;
   border-bottom: 1px dashed #8a898e;
+  margin-top: 5px;
 }
 
 /* absent */
 .absent__header {
-  margin-top: 37.5px;
   font-size: 16px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 37.5px;
 }
-.absent__header {
-  width: 100%;
-  margin-top: 40px;
+.absent__header h2 {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
 }
-
 /* footer */
 
 footer {

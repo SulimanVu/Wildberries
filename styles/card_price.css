@@ -25,32 +25,54 @@ h4 {
   box-sizing: border-box;
 }
 .current__price h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
   margin-block-start: 0;
   margin-block-end: 0;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   height: min-content;
   display: flex;
   justify-content: space-between;
-  font-size: 24px;
 }
-.transport,
-.card__payment {
+.current__price h3 > div span:nth-child(2) {
+  font-size: 20px;
+}
+.transport{
+  margin-top: 25px;
+}
+.card__payment{
   margin-top: 24px;
 }
-.transport span,
-.card__payment span {
+.card__payment h4 span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.card__payment h4 img{
+  margin-right: 2px;
+}
+.transport span {
   font-weight: 400;
   font-size: 13px;
 }
 .transport h4 span {
+  font-weight: 700;
   font-size: 16px;
   font-weight: 700;
+}
+.transport h4 img {
+  margin: 4px 2px 0px 0;
 }
 .transport div {
   display: flex;
   flex-direction: column;
 }
-.transport div span:nth-child(2) {
+.address {
+  margin-top: 1px;
+}
+.purple {
   border-bottom: 1px dashed rgba(203, 17, 171, 0.2);
 }
 .return__shipp {
@@ -59,6 +81,8 @@ h4 {
   display: flex;
   align-items: center;
   font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
   background-color: #f6f6fa;
   border-radius: 8px;
 }
@@ -70,30 +94,41 @@ h4 {
 .card__payment__img {
   display: flex;
   align-items: center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
 }
 .card__payment__img img {
   margin-right: 8px;
 }
 /* checkbox__payment */
 .check__block {
+  height: 66px;
   margin-top: 12px;
-  padding: 8px 8px 12px;
-  box-sizing: border-box;
+  padding: 10px 8px 12px;
   border-radius: 8px;
   background-color: #f6f6fa;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .check__payment {
-  height: 24px;
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
-  margin-top: 12px;
 }
-.check__payment label {
+.check__payment .checkbox_container {
   height: fit-content;
-  margin-top: 0;
+  margin-top: -3px;
+  margin-right: 8px;
 }
-
+.check__block span {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
 .card__price__block button {
   width: 100%;
   font-size: 16px;

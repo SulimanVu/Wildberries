@@ -246,14 +246,17 @@ if (windowOuterWidth < 550) {
 
 let font_price = document.querySelectorAll(".actual__price");
 
-font_price.forEach((item) => {
+font_price.forEach((item, index) => {
   let price = Number(item.innerHTML.replace(/\s/g, ""));
-  console.log(item.innerHTML.replace(/\s/g, ""));
+
   if (price > 100000) {
     item.style.fontSize = "16px";
     item.style.lineHeight = "24px";
+    item.style.letterSpacing = '-0.4px'
+    products[index].lastElementChild.style.letterSpacing = '-1px'
   } else {
     item.style.fontSize = "20px";
     item.style.lineHeight = "28px";
+    products[index].style.marginTop = "-3px";
   }
 });
