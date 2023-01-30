@@ -12,12 +12,12 @@
 }
 
 header {
+  font-family: "Segoe UI";
   width: 1400px;
   height: 88px;
   padding: 16px 24px;
   display: flex;
   justify-content: space-between;
-  font-family: "Segoe UI";
   box-sizing: border-box;
 }
 
@@ -28,28 +28,15 @@ header {
   align-items: center;
 }
 
-.menu > div {
-  width: 48px;
-  height: 48px;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 8px;
-  padding: 12px 10px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  box-sizing: border-box;
-}
-
 .menu > h3 {
   width: 106px;
-  font-weight: 600;
-  font-size: 28px;
+  font-weight: 700;
+  font-size: 20px;
   line-height: 24px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.15rem;
   color: #ffffff;
+  margin-top: 20px;
   margin-left: 16px;
-  width: fit-content;
-  font-variant: small-caps;
 }
 .menu span {
   font-style: normal;
@@ -60,7 +47,6 @@ header {
 .input__block {
   width: 970px;
   align-self: center;
-  margin: 0 auto;
   position: relative;
 }
 .input__block,
@@ -73,11 +59,12 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  border-radius: 20px;
+  border-radius: 36px;
   padding: 12px 20px;
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
   outline: none;
+  box-sizing: border-box;
 }
 
 .input__block input::placeholder {
@@ -87,8 +74,8 @@ header {
 
 .input__block img {
   position: absolute;
-  top: 8px;
-  right: -25px;
+  top: 11px;
+  right: 20px;
 }
 .h__basket span:nth-child(1) {
   font-weight: 400;
@@ -96,8 +83,8 @@ header {
   position: absolute;
   width: 16px;
   height: 16px;
-  top: -3px;
-  right: 5px;
+  top: -13px;
+  right: 2px;
   background-color: #f55123;
   border-radius: 50%;
   display: flex;
@@ -105,15 +92,10 @@ header {
   justify-content: center;
 }
 .icons {
-  width: 170px;
-  height: 56px;
-  align-self: center;
   display: flex;
-  justify-content: space-between;
 }
 
 .icons > div {
-  height: 60px;
   display: flex;
   color: #fff;
   flex-direction: column;
@@ -121,15 +103,15 @@ header {
   align-items: center;
   align-content: center;
 }
-
-.icons > div:nth-child(1) > img {
-  height: 30px;
+.icons span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 8px;
 }
-
-.icons > div:nth-child(2) > img {
-  height: 30px;
+.h__basket {
+  margin-left: 43px;
 }
-
 /* laptop */
 @media screen and (max-width: 1024px) {
   .input__block {

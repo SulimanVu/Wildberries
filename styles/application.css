@@ -1,7 +1,8 @@
 .application__process > div,
 form {
-  padding: 16px 24px 24px;
+  padding: 16px 24px 24px 0;
 }
+
 .delivery,
 .payment__method,
 form {
@@ -9,42 +10,73 @@ form {
   border-radius: 16px;
   background-color: #fff;
 }
-.delivery {
-  margin-top: 40px;
+ы .delivery {
+  height: 362px;
 }
 .del__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.del__header h3 {
+  margin: 8px 0 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+}
+.delivery {
+  margin-top: -1px;
+}
+.none {
+  margin-top: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: none;
+}
 .extradition {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 15px;
 }
 .extradition h4 {
   width: 170px;
   align-self: flex-start;
-  margin-right: 32px;
+  margin-right: 16px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.extradition span {
+  line-height: 24px;
 }
 .point {
   display: flex;
   flex-direction: column;
 }
-.point > span {
-  margin-bottom: 4px;
+.point div span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
 }
-.point div span:nth-child(3) {
+/* .point div span:nth-child(3) {
   margin-left: 8px;
+} */
+.images__block img {
+  width: 40px;
+  height: 56px;
 }
 .images__block img:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 4px;
 }
 .return__del {
   display: flex;
   align-items: center;
-  margin-top: 24px;
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
 }
 .return__del img {
   margin-right: 8px;
@@ -58,7 +90,9 @@ form {
   margin-right: 12px;
   margin-left: 8px;
 }
-
+.free {
+  margin-top: -4px;
+}
 /* Mobile */
 @media screen and (max-width: 530px) {
   .extradition {

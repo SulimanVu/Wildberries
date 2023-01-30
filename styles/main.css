@@ -21,7 +21,7 @@ main {
   width: fit-content;
   color: #cb11ab;
 }
-.purple span:first-child{
+.purple span:first-child {
   letter-spacing: -1.5px;
 }
 .gray {
@@ -53,9 +53,9 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 18px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  padding-bottom: 18px;
 }
 .see__all > div > span {
   margin-left: 11px;
@@ -64,6 +64,8 @@ main {
 .see__all > img {
   width: 16px;
   height: 10px;
+  margin-right: 2px;
+  margin-top: 4px;
 }
 
 .see__all > div {
@@ -72,20 +74,6 @@ main {
 }
 
 /* prod-cards */
-.sold > div {
-  margin-bottom: 32px;
-}
-.sold .prod__all__info {
-  font-family: "Segoe UI";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #a0a0a4;
-}
-.sold .producer_block {
-  display: none;
-}
 .prod__cards {
   display: flex;
   justify-content: space-between;
@@ -122,6 +110,34 @@ main {
   filter: grayscale(100%);
 }
 
+.sold > div {
+  width: 946px;
+  margin-left: -12px;
+  margin-bottom: 32px !important;
+  min-height: fit-content;
+}
+.sold .prod__all__info {
+  width: 309px;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a0a0a4;
+}
+.sold .producer_block {
+  display: none;
+}
+.sold .prod__block {
+  color: #a0a0a4;
+}
+.sold .prod__amount {
+  margin-top: -9px;
+}
+.sold .prod__header {
+  width: 309px;
+  margin: 0;
+}
 /* amount */
 .prod__amount {
   width: 226px;
@@ -232,6 +248,13 @@ main {
   line-height: 16px;
   color: #a0a0a4;
 }
+.exclamation {
+  display: flex;
+}
+.exclamation__mark {
+  margin-top: -2px;
+  margin-left: 7px;
+}
 .producer:nth-child(2) {
   margin-top: 4px;
 }
@@ -263,12 +286,14 @@ main {
 .absent__header {
   font-size: 16px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 37.5px;
+  margin-top: 17.5px;
+  padding-bottom: 13px;
 }
 .absent__header h2 {
   font-weight: 600;
   font-size: 16px;
   margin: 0;
+  letter-spacing: 0.06px;
 }
 /* footer */
 
