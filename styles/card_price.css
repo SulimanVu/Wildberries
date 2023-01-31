@@ -150,6 +150,7 @@ h4 {
   align-self: flex-start;
   box-sizing: border-box;
   margin-right: 8px;
+  margin-top: -2px;
 }
 .agreement {
   display: flex;

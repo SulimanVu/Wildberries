@@ -1,5 +1,4 @@
-.application__process > div,
-form {
+.application__process > div {
   padding: 16px 24px 24px;
 }
 .application__process {
@@ -12,6 +11,9 @@ form {
   background-color: #fff;
 }
 
+form {
+  padding: 16px 24px 0px;
+}
 .delivery {
   max-height: 362px;
   min-height: 362px;

@@ -2,6 +2,7 @@ form {
   font-family: "Segoe UI";
 }
 .form__item {
+  width: 100%;
   display: inline-block;
   vertical-align: top;
   position: relative;
@@ -11,12 +12,15 @@ form {
   width: 83%;
   justify-content: flex-start;
 }
+.inputs__user{
+  margin-bottom: 12px;
+}
 .form__item:not(:last-child) {
   margin-right: 24px;
 }
 .form__item input {
   font-family: "Segoe UI";
-  padding: 3px 0;
+  padding: 3px 0 5px;
   font-size: 16px;
   border: none;
   border-bottom: 2px solid #9797af;
@@ -49,7 +53,7 @@ form > h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 #buy {
   cursor: pointer;

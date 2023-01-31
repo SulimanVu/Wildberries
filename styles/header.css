@@ -13,14 +13,16 @@
 
 header {
   font-family: "Segoe UI";
-  width: 1400px;
+  width: 100%;
   height: 88px;
   padding: 16px 24px;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
 }
-
+main{
+  width: 100%;
+}
 .menu {
   height: 56px;
   display: flex;
@@ -45,7 +47,7 @@ header {
   color: #ffffff;
 }
 .input__block {
-  width: 970px;
+  width: 66%;
   align-self: center;
   position: relative;
 }
@@ -114,6 +116,9 @@ header {
 }
 /* laptop */
 @media screen and (max-width: 1024px) {
+  .header .input__block{
+    width: 100%;
+  }
   .input__block {
     width: 48%;
   }

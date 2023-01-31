@@ -1,10 +1,12 @@
 body {
+  width: 100%;
   margin: 0;
   font-family: "Segoe UI";
   background-color: #6725a8;
 }
 main {
-  width: 1400px;
+  width: 100%;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   padding: 0 24px 50px;
@@ -29,7 +31,8 @@ main {
   color: #9797af;
 }
 .products {
-  width: 891px;
+  width: 66%;
+  /* width: 891px; */
 }
 .products h2 {
   font-family: "Segoe UI";
@@ -43,7 +46,7 @@ main {
 .card__price {
   font-family: "Segoe UI";
   margin-top: 22px;
-  width: 429px;
+  width: 32%;
 }
 
 /* see-all */
@@ -298,14 +301,15 @@ main {
 /* footer */
 
 footer {
-  font-family: "Segoe UI";
+  width: 100%;
   text-align: center;
-  padding: 24px 0;
   box-sizing: border-box;
+  color: #fff;
+}
+footer h5 {
+  font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  font-weight: 400;
-  color: #fff;
 }
 /* Mobile */
 @media screen and (max-width: 530px) {
