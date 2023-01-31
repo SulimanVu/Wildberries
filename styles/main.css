@@ -128,6 +128,7 @@ main {
   display: none;
 }
 .sold .prod__block {
+  margin-top: 5px;
   color: #a0a0a4;
 }
 .sold .prod__amount {
@@ -135,7 +136,7 @@ main {
 }
 .sold .prod__header {
   width: 309px;
-  margin: 0;
+  margin: 0 0 0 -1px;
 }
 /* amount */
 .prod__amount {

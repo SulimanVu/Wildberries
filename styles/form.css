@@ -8,10 +8,8 @@ form {
 }
 .inputs__block {
   display: flex;
-  width: 80%;
-}
-form > div:nth-child(2) {
-  margin-bottom: 16px;
+  width: 83%;
+  justify-content: flex-start;
 }
 .form__item:not(:last-child) {
   margin-right: 24px;
@@ -48,8 +46,10 @@ form > div:nth-child(2) {
   font-size: 13px;
 }
 form > h4 {
-  font-size: 18px;
-  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 34px;
 }
 #buy {
   cursor: pointer;

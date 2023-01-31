@@ -2,16 +2,22 @@
 form {
   padding: 16px 24px 24px;
 }
-
-.delivery,
+.application__process {
+  margin-top: 40px;
+}
 .payment__method,
 form {
   margin-top: 16px;
   border-radius: 16px;
   background-color: #fff;
 }
+
 .delivery {
-  height: 362px;
+  max-height: 362px;
+  min-height: 362px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-sizing: border-box;
 }
 .del__header {
   display: flex;
@@ -19,17 +25,13 @@ form {
   align-items: center;
 }
 .del__header h3 {
-  margin: 8px 0 0;
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.01em;
 }
-.delivery {
-  margin-top: -1px;
-}
 .none {
-  margin-top: 14px;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -44,9 +46,10 @@ form {
 .extradition h4 {
   width: 170px;
   align-self: flex-start;
-  margin-right: 16px;
+  margin: 0 15px 0 0;
   font-weight: 600;
   font-size: 16px;
+  line-height: 24px;
 }
 .revew span {
   line-height: 24px;
@@ -63,10 +66,13 @@ form {
 /* .point div span:nth-child(3) {
   margin-left: 8px;
 } */
+.images__block {
+  margin-top: -2px;
+}
 .images__block img {
   width: 40px;
   height: 56px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.05));
   border-radius: 8px;
 }
 .images__block img:not(:last-child) {
@@ -75,17 +81,19 @@ form {
 .return__del {
   display: flex;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 17px;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
 }
 .return__del img {
   margin-right: 8px;
+  align-self: end;
 }
 
 /* payment__method */
 .card__info {
+  margin-top: 16px;
   display: flex;
 }
 .card__info span:nth-child(2) {
