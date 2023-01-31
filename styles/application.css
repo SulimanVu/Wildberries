@@ -1,6 +1,6 @@
 .application__process > div,
 form {
-  padding: 16px 24px 24px 0;
+  padding: 16px 24px 24px;
 }
 
 .delivery,
@@ -10,7 +10,7 @@ form {
   border-radius: 16px;
   background-color: #fff;
 }
-ы .delivery {
+.delivery {
   height: 362px;
 }
 .del__header {
@@ -39,7 +39,7 @@ form {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 16px;
 }
 .extradition h4 {
   width: 170px;
@@ -48,7 +48,7 @@ form {
   font-weight: 600;
   font-size: 16px;
 }
-.extradition span {
+.revew span {
   line-height: 24px;
 }
 .point {
@@ -66,6 +66,8 @@ form {
 .images__block img {
   width: 40px;
   height: 56px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+  border-radius: 8px;
 }
 .images__block img:not(:last-child) {
   margin-right: 4px;
@@ -89,9 +91,6 @@ form {
 .card__info span:nth-child(2) {
   margin-right: 12px;
   margin-left: 8px;
-}
-.free {
-  margin-top: -4px;
 }
 /* Mobile */
 @media screen and (max-width: 530px) {
