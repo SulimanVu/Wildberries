@@ -111,9 +111,8 @@ main {
 .img_sold {
   filter: grayscale(100%);
 }
-
 .sold > div {
-  width: 946px;
+  width: 100%;
   margin-left: -12px;
   margin-bottom: 32px !important;
   min-height: fit-content;
@@ -324,15 +323,15 @@ footer h5 {
     justify-content: center;
   }
   .products > h2 {
-    padding: 0 16px;
+    margin: 15px 0 13.5px 16px;
   }
   .products__in__bascet {
     width: 90%;
   }
   .see__all {
-    padding: 0 0 16px;
-    width: 90%;
-    margin: auto;
+    width: 92%;
+    margin: 0 auto;
+    padding-bottom: 10px;
   }
   main section,
   .products,
@@ -362,7 +361,8 @@ footer h5 {
     align-items: center;
   }
   .prod__amount {
-    width: 90%;
+    width: 97%;
+    align-self: flex-end;
   }
   .all {
     position: relative;
@@ -374,6 +374,15 @@ footer h5 {
     padding-bottom: 16px;
   }
   .see__all > div > label {
-    align-self: flex-end;
+    margin-top: 32px;
+    margin-left: -14px;
+    margin-right: 11px;
+  }
+  .sold{
+    width: 100%;
+    margin-left: 14px;
+  }
+  .sold .prod__header{
+    width: 100%;
   }
 }

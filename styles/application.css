@@ -15,8 +15,6 @@ form {
   padding: 16px 24px 0px;
 }
 .delivery {
-  max-height: 362px;
-  min-height: 362px;
   border-radius: 16px;
   background-color: #fff;
   box-sizing: border-box;
@@ -116,5 +114,9 @@ form {
   }
   .images__block img {
     width: 41px;
+  }
+  .del__header h3 {
+    font-size: 20px;
+    line-height: 28px;
   }
 }

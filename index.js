@@ -252,11 +252,19 @@ font_price.forEach((item, index) => {
   if (price > 100000) {
     item.style.fontSize = "16px";
     item.style.lineHeight = "24px";
-    item.style.letterSpacing = '-0.4px'
-    products[index].lastElementChild.style.letterSpacing = '-1px'
+    item.style.letterSpacing = "-0.4px";
+    products[index].lastElementChild.style.letterSpacing = "-1px";
   } else {
     item.style.fontSize = "20px";
     item.style.lineHeight = "28px";
     products[index].style.marginTop = "-3px";
   }
 });
+
+//Изменение иконки меню для телефона
+let menu = document.querySelector(".menu");
+let menu_img = document.querySelector("#menu_img");
+
+if (window.screen.availWidth < 400) {
+  menu_img.src = "./images/mobile_burger.svg";
+}

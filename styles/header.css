@@ -20,7 +20,7 @@ header {
   justify-content: space-between;
   box-sizing: border-box;
 }
-main{
+main {
   width: 100%;
 }
 .menu {
@@ -116,7 +116,7 @@ main{
 }
 /* laptop */
 @media screen and (max-width: 1024px) {
-  .header .input__block{
+  .header .input__block {
     width: 100%;
   }
   .input__block {
@@ -133,22 +133,15 @@ main{
 @media screen and (max-width: 530px) {
   header {
     margin: 0;
-  }
-  .menu div {
-    padding: 0;
-    margin-left: 13px;
-    margin-right: 16px;
-  }
-  .menu div img {
-    width: 24px;
+    height: 56px;
+    padding: 0 13px
   }
   .menu h3 {
-    font-size: 24px;
-    width: 80%;
-    margin-left: 1px;
-  }
-  .input__block {
-    width: 10%;
+    font-size: 22px;
+    width: 100%;
+    margin-left: 20px;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
   }
   .input__block input,
   .icons {
@@ -158,7 +151,7 @@ main{
     width: 28px;
     height: 28px;
     filter: white;
-    top: -12px;
-    right: -10px;
+    top: -14px;
+    right: -2px;
   }
 }
