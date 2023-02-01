@@ -82,8 +82,8 @@ form > h4 {
     width: 100%;
   }
   .inputs__block input {
-    height: 56px;
     width: 100%;
+    margin-bottom: 45px;
   }
   form div:nth-child(2) {
     margin-bottom: 0px;

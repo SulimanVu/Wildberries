@@ -1,5 +1,5 @@
 h4 {
-  font-family: 'Segoe UI';
+  font-family: "Segoe UI";
   display: flex;
   font-size: 16px;
   justify-content: space-between;
@@ -171,5 +171,20 @@ h4 {
   }
   .transport h4 img {
     height: fit-content;
+  }
+  .card__price__block {
+    background-color: inherit;
+    border: none;
+    box-shadow: none;
+  }
+  .return__shipp {
+    background-color: #f0ecf4;
+  }
+  .card__payment h4,
+  .card__payment__img {
+    display: none;
+  }
+  .card__payment .check__block {
+    background-color: #f0ecf4;
   }
 }

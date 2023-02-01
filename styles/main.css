@@ -326,7 +326,7 @@ footer h5 {
     margin: 15px 0 13.5px 16px;
   }
   .products__in__bascet {
-    width: 90%;
+    width: 100%;
   }
   .see__all {
     width: 92%;
@@ -355,14 +355,18 @@ footer h5 {
     flex-direction: column;
   }
   .prod__change__amount {
-    width: 100%;
+    width: 92%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
   }
   .prod__amount {
-    width: 97%;
-    align-self: flex-end;
+    width: 100%;
+  }
+  .prod__price{
+    width: 100%;
+    white-space: nowrap;
   }
   .all {
     position: relative;
@@ -384,5 +388,9 @@ footer h5 {
   }
   .sold .prod__header{
     width: 100%;
+  }
+  .sold .prod__amount{
+    width: 25%;
+    align-self: flex-end;
   }
 }
